@@ -17,11 +17,11 @@ public class Calculator {
 			String op = line[1];
 			String b = line[2];
 			if (line.length != 3)
-				throw new Exception("Что-то пошло не так, попробуйте еще раз");
+				throw new Exception("пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ");
 			String result = Numbers.calculating(a, op, b); 
 
 			System.out.println(result);
-
+ 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
