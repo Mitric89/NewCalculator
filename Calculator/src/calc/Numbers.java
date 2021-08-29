@@ -41,7 +41,7 @@ public class Numbers {
 				return result;
 			}
 		}
-		throw new ValidateException("������");
+		throw new ValidateException("Ошибка");
 
 	}
 
