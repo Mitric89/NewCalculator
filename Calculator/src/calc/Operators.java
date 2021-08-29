@@ -19,7 +19,7 @@ public class Operators {
 			result = a / b;
 			break;
 		default:
-			throw new Exception("Неправильно введен символ операции, используйте только +, -, *, /");
+			throw new Exception("РќРµРїСЂР°РІРёР»СЊРЅРѕ РІРІРµРґРµРЅ СЃРёРјРІРѕР» РѕРїРµСЂР°С†РёРё, РёСЃРїРѕР»СЊР·СѓР№С‚Рµ С‚РѕР»СЊРєРѕ +, -, *, /");
 		}
 		return result;
 

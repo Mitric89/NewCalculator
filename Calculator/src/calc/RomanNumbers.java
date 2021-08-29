@@ -10,7 +10,7 @@ public class RomanNumbers {
 				sum += 1;
 			if (romans[i] == 'V') {
 				if (i != 0 && romans[i - 1] == 'I')
-					sum += 4 - 1; // и вычесть последнее накопленное сложение
+					sum += 4 - 1; // Рё РІС‹С‡РµСЃС‚СЊ РїРѕСЃР»РµРґРЅРµРµ РЅР°РєРѕРїР»РµРЅРЅРѕРµ СЃР»РѕР¶РµРЅРёРµ
 				else
 					sum += 5;
 			}
@@ -50,7 +50,7 @@ public class RomanNumbers {
 
 	public static String arabicToRoman(int symbol) {
 		if (symbol < 1 || symbol > 3999)
-			return "Неверное римское число";
+			return "РќРµРІРµСЂРЅРѕРµ СЂРёРјСЃРєРѕРµ С‡РёСЃР»Рѕ";
 		String s = "";
 		while (symbol >= 1000) {
 			s += "M";

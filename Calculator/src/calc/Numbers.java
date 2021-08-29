@@ -3,24 +3,24 @@ package calc;
 public class Numbers {
 
 	public static String calculating(String first, String operand, String second) throws ValidateException {
-		String result = "Ошибка";
+		String result = "РћС€РёР±РєР°";
 		int a;
 		int b;
 		if (type(first) == type(second)) {
 			if (type(first) == "Arabic") {
-				// обработка арабских чисел
+				// РѕР±СЂР°Р±РѕС‚РєР° Р°СЂР°Р±СЃРєРёС… С‡РёСЃРµР»
 				a = Integer.parseInt(first);
 				b = Integer.parseInt(second);
 				try {
 					Numbers.ValidateNumbers(a);
 					Numbers.ValidateNumbers(b);
-					result = String.valueOf(Operators.operators(a, operand, b)); // считает значения
+					result = String.valueOf(Operators.operators(a, operand, b)); // СЃС‡РёС‚Р°РµС‚ Р·РЅР°С‡РµРЅРёСЏ
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 				return result;
 			} else {
-				// обработка римских чисел
+				// РѕР±СЂР°Р±РѕС‚РєР° СЂРёРјСЃРєРёС… С‡РёСЃРµР»
 				a = RomanNumbers.romanToArabic(first);
 				b = RomanNumbers.romanToArabic(second);
 				try {
@@ -32,7 +32,7 @@ public class Numbers {
 						result = RomanNumbers.arabicToRoman(symbol);
 						return result;
 					} else {
-						throw new ValidateException("Результат меньше 0. Попробуйте еще раз");
+						throw new ValidateException("Р РµР·СѓР»СЊС‚Р°С‚ РјРµРЅСЊС€Рµ 0. РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·");
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,13 +41,13 @@ public class Numbers {
 				return result;
 			}
 		}
-		throw new ValidateException("Ошибка");
+		throw new ValidateException("пїЅпїЅпїЅпїЅпїЅпїЅ");
 
 	}
 
 	public static void ValidateNumbers(int num) throws ValidateException {
 		if (num < 1 || num > 10 || num % 1 != 0) {
-			throw new ValidateException("Числа должны быть целыми, в пределах от 1 до 10");
+			throw new ValidateException("Р§РёСЃР»Р° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ С†РµР»С‹РјРё, РІ РїСЂРµРґРµР»Р°С… РѕС‚ 1 РґРѕ 10");
 		}
 	}
 

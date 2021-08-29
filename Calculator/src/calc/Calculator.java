@@ -17,7 +17,7 @@ public class Calculator {
 			String op = line[1];
 			String b = line[2];
 			if (line.length != 3)
-				throw new Exception("���-�� ����� �� ���, ���������� ��� ���");
+				throw new Exception("Что-то пошло не так, попробуйте еще раз");
 			String result = Numbers.calculating(a, op, b); 
 
 			System.out.println(result);
