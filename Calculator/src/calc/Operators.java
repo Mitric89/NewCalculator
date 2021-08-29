@@ -2,10 +2,10 @@ package calc;
 
 public class Operators {
 
-	public static int operators(int a, String operand, int b) throws Exception {
+	public static int operators(int a, String operator, int b) throws Exception {
 		int result;
 
-		switch (operand) {
+		switch (operator) {
 		case "+":
 			result = a + b;
 			break;
